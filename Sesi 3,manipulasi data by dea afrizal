@@ -10,7 +10,7 @@ print("*****************************")
 nama_user = input("masukan nama kamu: ")
 
 
-bentuk_goa = "|_|"  
+bentuk_goa = " |_|"  
 goa_kosong = [bentuk_goa] * 4 #INI TETAP HARUS KOSONG
 goa_bersih = " ".join(goa_kosong)
 
@@ -31,9 +31,9 @@ if confirm_answer == "n":
     exit()
 elif confirm_answer == "y":
     if pilihan_user == cuypy_position:
-        print(f"Selamat {nama_user} kamu menang! posisi CUYPY ada di goa nomor {cuypy_position} dan pilihanmu adalah goa nomor {pilihan_user}")
+        print(f"{goa}, Selamat Kamu menang Cuypy berada di goa nomor {cuypy_position}")
     else:
-        print(f"KAMU KALAH! cuypy bukan berada disitu, tapi ada di goa nomor {cuypy_position}. sedangkan kamu memilih goa nomor {pilihan_user}")
+        print(f"{goa}, KAMU KALAH! cuypy bukan berada disitu, tapi ada di goa nomor {cuypy_position}. sedangkan kamu memilih goa nomor {pilihan_user}")
 else:
     print("Silahkan ulangi programnya!")
     exit()
