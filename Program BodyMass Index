@@ -1,0 +1,22 @@
+"program perhitungan BMI"
+
+print("PERHITUNGAN BMI (BODY MASS INDEX)")
+print("--------------------------------------------------------")
+
+berat_badan = input("masukan berat badan anda (kilogram): ")
+berat_badan = float(berat_badan)
+tinggi_badan = input("masukan tinggi badan anda (meter): ")
+tinggi_badan = float(tinggi_badan)
+
+bmi = berat_badan/(tinggi_badan**2)
+
+berat_badan_ideal = dict()
+berat_badan_ideal['batas_bawah'] = 18.5*(tinggi_badan**2)
+berat_badan_ideal['batas_atas'] = 25*(tinggi_badan**2)
+
+print(f"Nilai BMI anda alah {bmi : .3f} kg/m2")
+print("nilai  BMI normal adalah 18.5 kg/m2 - 25 kg/m2")
+print(f"berat badan ideal anda dalam rentang " f"{berat_badan_ideal['batas_bawah']: .2f} kg - {berat_badan_ideal['batas_atas']:.2f} kg")
+
+
+print("thank u for use this program,keep spirit to have ideal body")
